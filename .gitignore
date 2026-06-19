@@ -1,0 +1,21 @@
+# Build
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+*.user
+*.suo
+*.cache
+*.log
+.claude
+
+# Visual Studio / VS Code
+.vs/
+*.rsuser
+
+# Publish / package
+publish/
+*.ymme.zip
+en_build_log.txt
+build_log.txt
+

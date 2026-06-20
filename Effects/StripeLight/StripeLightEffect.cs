@@ -31,11 +31,11 @@ public class StripeLightEffect : VideoEffectBase
     public Animation Angle { get; } = new Animation(45, -3600, 3600);
 
     [Display(GroupName = "ストライプ光", Name = "中心X", Description = "放射中心X（0=左, 100=右）※放射状モード")]
-    [AnimationSlider("F0", "%", 0, 100)]
+    [AnimationSlider("F0", "%", -100, 200)]
     public Animation CenterX { get; } = new Animation(50, -100, 200);
 
     [Display(GroupName = "ストライプ光", Name = "中心Y", Description = "放射中心Y（0=上, 100=下）※放射状モード")]
-    [AnimationSlider("F0", "%", 0, 100)]
+    [AnimationSlider("F0", "%", -100, 200)]
     public Animation CenterY { get; } = new Animation(50, -100, 200);
 
     [Display(GroupName = "ストライプ光", Name = "間隔", Description = "帯/リングの間隔（px）※直線・同心円モード")]

@@ -34,11 +34,11 @@ public class FeedbackEffect : VideoEffectBase
     public Animation Taps { get; } = new Animation(8, 1, 32);
 
     [Display(GroupName = "フィードバック", Name = "中心X", Description = "反復の中心X（0=左, 100=右）")]
-    [AnimationSlider("F0", "%", 0, 100)]
+    [AnimationSlider("F0", "%", -100, 200)]
     public Animation CenterX { get; } = new Animation(50, -100, 200);
 
     [Display(GroupName = "フィードバック", Name = "中心Y", Description = "反復の中心Y（0=上, 100=下）")]
-    [AnimationSlider("F0", "%", 0, 100)]
+    [AnimationSlider("F0", "%", -100, 200)]
     public Animation CenterY { get; } = new Animation(50, -100, 200);
 
     public override IVideoEffectProcessor CreateVideoEffect(IGraphicsDevicesAndContext devices)

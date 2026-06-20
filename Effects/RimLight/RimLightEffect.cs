@@ -22,11 +22,11 @@ public class RimLightEffect : VideoEffectBase
     public override string Label => "em_リムライト";
 
     [Display(GroupName = "リムライト", Name = "光源X", Description = "光源の横位置（0=左, 100=右）")]
-    [AnimationSlider("F0", "%", 0, 100)]
+    [AnimationSlider("F0", "%", -100, 200)]
     public Animation LightX { get; } = new Animation(30, -100, 200);
 
     [Display(GroupName = "リムライト", Name = "光源Y", Description = "光源の縦位置（0=上, 100=下）")]
-    [AnimationSlider("F0", "%", 0, 100)]
+    [AnimationSlider("F0", "%", -100, 200)]
     public Animation LightY { get; } = new Animation(20, -100, 200);
 
     [Display(GroupName = "リムライト", Name = "縁幅", Description = "光る縁の太さ（px）")]

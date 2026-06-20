@@ -26,11 +26,11 @@ public class KaleidoscopeEffect : VideoEffectBase
     public Animation Rotation { get; } = new Animation(0, -3600, 3600);
 
     [Display(GroupName = "カレイドスコープ", Name = "中心X", Description = "万華鏡の中心X（0=左, 100=右）")]
-    [AnimationSlider("F0", "%", 0, 100)]
+    [AnimationSlider("F0", "%", -100, 200)]
     public Animation CenterX { get; } = new Animation(50, -100, 200);
 
     [Display(GroupName = "カレイドスコープ", Name = "中心Y", Description = "万華鏡の中心Y（0=上, 100=下）")]
-    [AnimationSlider("F0", "%", 0, 100)]
+    [AnimationSlider("F0", "%", -100, 200)]
     public Animation CenterY { get; } = new Animation(50, -100, 200);
 
     public override IVideoEffectProcessor CreateVideoEffect(IGraphicsDevicesAndContext devices)

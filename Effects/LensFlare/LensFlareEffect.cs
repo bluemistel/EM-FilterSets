@@ -18,11 +18,11 @@ public class LensFlareEffect : VideoEffectBase
     public override string Label => "em_レンズフレア";
 
     [Display(GroupName = "レンズフレア", Name = "光源X", Description = "光源の横位置（0=左, 100=右）")]
-    [AnimationSlider("F0", "%", 0, 100)]
+    [AnimationSlider("F0", "%", -100, 200)]
     public Animation LightX { get; } = new Animation(30, -100, 200);
 
     [Display(GroupName = "レンズフレア", Name = "光源Y", Description = "光源の縦位置（0=上, 100=下）")]
-    [AnimationSlider("F0", "%", 0, 100)]
+    [AnimationSlider("F0", "%", -100, 200)]
     public Animation LightY { get; } = new Animation(25, -100, 200);
 
     [Display(GroupName = "レンズフレア", Name = "強さ", Description = "フレアの強さ")]

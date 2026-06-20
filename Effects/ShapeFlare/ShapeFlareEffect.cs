@@ -16,6 +16,7 @@ namespace EmoiEffect.Effects.ShapeFlare;
 /// シェイプフレア映像エフェクト。
 /// 選択した YMM4 標準図形を「ゴースト」として、光源と中心を結ぶ軸上に複数並べて加算する。
 /// </summary>
+[PluginDetails(AuthorName = "あおもや", ContentId = "sm46456253")]
 [VideoEffect(
     "em_シェイプフレア",
     ["EMフィルターセット"],

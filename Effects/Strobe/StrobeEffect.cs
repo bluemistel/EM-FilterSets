@@ -3,11 +3,13 @@ using YukkuriMovieMaker.Commons;
 using YukkuriMovieMaker.Controls;
 using YukkuriMovieMaker.Exo;
 using YukkuriMovieMaker.Player.Video;
+using YukkuriMovieMaker.Plugin;
 using YukkuriMovieMaker.Plugin.Effects;
 
 namespace EmoiEffect.Effects.Strobe;
 
 /// <summary>ストロボ（明滅）映像エフェクト。</summary>
+[PluginDetails(AuthorName = "あおもや", ContentId = "sm46456253")]
 [VideoEffect(
     "em_ストロボ",
     ["EMフィルターセット"],

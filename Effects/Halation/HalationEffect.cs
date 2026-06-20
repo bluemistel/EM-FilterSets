@@ -4,6 +4,7 @@ using YukkuriMovieMaker.Commons;
 using YukkuriMovieMaker.Controls;
 using YukkuriMovieMaker.Exo;
 using YukkuriMovieMaker.Player.Video;
+using YukkuriMovieMaker.Plugin;
 using YukkuriMovieMaker.Plugin.Effects;
 
 namespace EmoiEffect.Effects.Halation;
@@ -12,6 +13,7 @@ namespace EmoiEffect.Effects.Halation;
 /// ハレーション（フィルムルック）映像エフェクト。
 /// ハイライトから漏れる色付き（暖色）のにじみを加え、フィルム的な質感を与える。
 /// </summary>
+[PluginDetails(AuthorName = "あおもや", ContentId = "sm46456253")]
 [VideoEffect(
     "em_ハレーション",
     ["EMフィルターセット"],

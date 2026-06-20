@@ -3,6 +3,7 @@ using YukkuriMovieMaker.Commons;
 using YukkuriMovieMaker.Controls;
 using YukkuriMovieMaker.Exo;
 using YukkuriMovieMaker.Player.Video;
+using YukkuriMovieMaker.Plugin;
 using YukkuriMovieMaker.Plugin.Effects;
 
 namespace EmoiEffect.Effects.Vignette;
@@ -11,6 +12,7 @@ namespace EmoiEffect.Effects.Vignette;
 /// ビネット（周辺減光）映像エフェクト。
 /// HLSL カスタムシェーダー基盤の動作確認を兼ねた最小実装。
 /// </summary>
+[PluginDetails(AuthorName = "あおもや", ContentId = "sm46456253")]
 [VideoEffect(
     "em_ビネット",
     ["EMフィルターセット"],

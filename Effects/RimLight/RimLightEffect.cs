@@ -4,6 +4,7 @@ using YukkuriMovieMaker.Commons;
 using YukkuriMovieMaker.Controls;
 using YukkuriMovieMaker.Exo;
 using YukkuriMovieMaker.Player.Video;
+using YukkuriMovieMaker.Plugin;
 using YukkuriMovieMaker.Plugin.Effects;
 
 namespace EmoiEffect.Effects.RimLight;
@@ -12,6 +13,7 @@ namespace EmoiEffect.Effects.RimLight;
 /// リムライト（Rim Light）映像エフェクト。
 /// アルファの縁のうち光源方向に面した側を光らせ、光の回り込みを表現する。
 /// </summary>
+[PluginDetails(AuthorName = "あおもや", ContentId = "sm46456253")]
 [VideoEffect(
     "em_リムライト",
     ["EMフィルターセット"],

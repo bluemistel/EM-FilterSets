@@ -3,6 +3,7 @@ using YukkuriMovieMaker.Commons;
 using YukkuriMovieMaker.Controls;
 using YukkuriMovieMaker.Exo;
 using YukkuriMovieMaker.Player.Video;
+using YukkuriMovieMaker.Plugin;
 using YukkuriMovieMaker.Plugin.Effects;
 
 namespace EmoiEffect.Effects.Diffusion;
@@ -11,6 +12,7 @@ namespace EmoiEffect.Effects.Diffusion;
 /// ディフュージョン映像エフェクト。
 /// 画像全体をぼかして元画像にスクリーン合成し、柔らかい拡散光を与える。
 /// </summary>
+[PluginDetails(AuthorName = "あおもや", ContentId = "sm46456253")]
 [VideoEffect(
     "em_ディフュージョン",
     ["EMフィルターセット"],
